@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyQR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .college-card {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+
+        .college-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .college-header {
+            background-color: #004d99;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .college-header h2 {
+            margin: 0;
+        }
+
+        .college-details {
+            padding: 20px;
+            color: #333;
+        }
+
+        .college-details p {
+            margin: 10px 0;
+        }
+
+        .college-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .college-details ul li {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .btn {
+            background-color: #ff9800;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e68900;
+        }
+
+        .college-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            background-color: #004d99;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Top 10 Polytechnic Colleges in Kozhikode</h1>
+    </header>
+
+    <div class="container">
+        <div class="college-list">
+            <!-- College 1 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>Kerala Government Polytechnic College (KGPTC)</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Established:</strong> 1946</p>
+                    <p><strong>Location:</strong> Kozhikode</p>
+                    <p><strong>Specializations:</strong> Civil, Mechanical, Electrical, Computer Engineering</p>
+                    <a href="https://www.google.com/maps/search/Kerala+Government+Polytechnic+College+%28KGPTC%29%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 2 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>Vidyodaya Institute of Engineering and Technology</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Kozhikode</p>
+                    <p><strong>Specializations:</strong> Engineering Diploma Courses</p>
+                    <a href="https://www.google.com/maps/search/Vidyodaya+Institute+of+Engineering+and+Technology%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 3 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>KMCT Polytechnic College</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Kozhikode</p>
+                    <p><strong>Specializations:</strong> Civil, Mechanical, Electrical, Electronics</p>
+                    <a href="https://www.google.com/maps/search/KMCT+Polytechnic+College%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 4 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>AWH Polytechnic College</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Kozhikode</p>
+                    <p><strong>Specializations:</strong> Mechanical, Civil, Electrical, Tool & Die</p>
+                    <a href="https://www.google.com/maps/search/AWH+Polytechnic+College%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 5 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>JDT Islam Polytechnic College</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Kozhikode</p>
+                    <p><strong>Specializations:</strong> Civil, Mechanical, Electrical Engineering</p>
+                    <a href="https://www.google.com/maps/search/JDT+Islam+Polytechnic+College%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 6 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>Model Polytechnic College, Vadakara</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Vadakara, Kozhikode</p>
+                    <p><strong>Specializations:</strong> Civil, Mechanical, Electrical</p>
+                    <a href="https://www.google.com/maps/search/Model+Polytechnic+College%2C+Vadakara%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 7 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>M-DIT Polytechnic College</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Ulliyeri, Kozhikode</p>
+                    <p><strong>Specializations:</strong> Electrical, Civil, Electronics</p>
+                    <a href="https://www.google.com/maps/search/M-DIT+Polytechnic+College%2C+Kozhikode%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 8 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>Model Polytechnic College, Poonjar</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Poonjar, Kottayam</p>
+                    <p><strong>Specializations:</strong> Various Engineering Courses</p>
+                    <a href="https://www.google.com/maps/search/Model+Polytechnic+College%2C+Poonjar%2C+Kottayam%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 9 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>Model Polytechnic College, Karunagappally</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Karunagappally, Kollam</p>
+                    <p><strong>Specializations:</strong> Various Engineering Courses</p>
+                    <a href="https://www.google.com/maps/search/Model+Polytechnic+College%2C+Karunagappally%2C+Kollam%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+
+            <!-- College 10 -->
+            <div class="college-card">
+                <div class="college-header">
+                    <h2>Model Polytechnic College, Painavu</h2>
+                </div>
+                <div class="college-details">
+                    <p><strong>Location:</strong> Painavu, Idukki</p>
+                    <p><strong>Specializations:</strong> Various Engineering Courses</p>
+                    <a href="https://www.google.com/maps/search/Model+Polytechnic+College%2C+Painavu%2C+Idukki%2C+India" class="btn" target="_blank">View on Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Top Polytechnic Colleges in Kozhikode. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
